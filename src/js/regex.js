@@ -23,7 +23,7 @@ export default class Validator {
 
     validateUsername() {
         // Если есть ошибка ввода имени - возращаем false,
-        // Если строка введена без ошибок - возвращаем true
+        // Если имя введено без ошибок - возвращаем true
         const reg = /(^[-_\d])|([^-\w])|(\d{4,})|([-_\d]$)/g;
         if(reg.test(this.name)){  
             return false
@@ -32,6 +32,7 @@ export default class Validator {
     }
 }
 
+// ПРОВЕРКА
 // let user1 = new Validator ('qwer-233_s');
 // console.log(user1);
 // console.log(user1.validateUsername());
